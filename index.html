@@ -1,0 +1,119 @@
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yas Fanes</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link href='http://www.fontonline.ir/css/BYekan.css' rel='stylesheet' type='text/css'>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: BYekan, 'BYekan', sans-serif;
+        }
+        body {
+            background: #232323;
+        }
+        .swiper-container {
+            width: 60%;
+            height: 100%;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+        }
+        @media (max-width: 800px) {
+            .swiper-container {
+                width: 80%;
+            }
+            .jumbotron {
+                width: 100%;
+            }
+        }
+
+        .jumbotron {
+            background: #232323;
+            width: 60%;
+            margin: auto;
+            height: 150px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            color: #ffffff;
+        }
+
+        .jumbotron div {
+            margin: 20px;
+        }
+
+        .top {
+            font-size: 22px;
+        }
+        .bottom {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="jumbotron">
+        <div class="top">
+            <p>مجموعه هنری <b>لال</b></p>
+        </div>
+        <div class="bottom">
+            تهیه شده توسط تیم <b>یاس فنز</b>
+        </div>
+    </div>
+
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="photo_2020-06-30_22-40-00.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="photo_2020-06-30_22-40-18.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="photo_2020-06-30_22-40-21.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="photo_2020-06-30_22-40-24.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+        let mySwiper = new Swiper ('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+    </script>
+</body>
+</html>
